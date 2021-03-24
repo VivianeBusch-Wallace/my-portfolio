@@ -44,7 +44,8 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  padding: 3rem;
+  /* padding: 3rem; */
+  position: relative;
 }
 h1,
 h2 {
@@ -52,11 +53,13 @@ h2 {
 }
 /* welcome text */
 header::before {
+  /* display: block; */
   background-color: lightseagreen;
   content: "";
   height: inherit;
   width: 100vw;
   z-index: -1;
+  position: absolute;
   /* animation: water 2s ease-in-out; */
 }
 /* @keyframes water {
