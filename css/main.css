@@ -29,11 +29,12 @@ section {
 }
 
 /* ---------------------------------------------- */
+/* welcome page */
 /* top half welcome page*/
 header {
   border: 3px solid blue;
   height: 50vh;
-  width: auto;
+  width: 100vw;
 }
 h1,
 h2 {
@@ -44,7 +45,7 @@ h2 {
 nav {
   border: 1px solid black;
   height: 50vh;
-  width: auto;
+  width: 100vw;
 }
 ul {
   border: 1px solid skyblue;
@@ -60,7 +61,7 @@ li {
   list-style: none;
   background-color: lightblue;
 }
-.home {
+.welcome-home {
   height: 20vh;
   width: 100vw;
 }
