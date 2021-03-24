@@ -44,7 +44,7 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  /* padding: 3rem; */
+  padding: 3rem;
   position: relative;
 }
 h1,
@@ -56,13 +56,15 @@ header::before {
   /* display: block; */
   background-color: lightseagreen;
   content: "";
-  height: inherit;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   z-index: -1;
   position: absolute;
-  /* animation: water 2s ease-in-out; */
+  top: 0;
+  right: 0;
+  animation: water 5s ease-in-out infinite;
 }
-/* @keyframes water {
+@keyframes water {
   0%,
   100% {
     clip-path: polygon(
@@ -84,7 +86,70 @@ header::before {
       0% 100%
     );
   }
-} */
+  40% {
+    clip-path: polygon(
+      0% 57%,
+      7% 57%,
+      14% 63%,
+      19% 68%,
+      27% 73%,
+      36% 71%,
+      43% 65%,
+      50% 60%,
+      56% 56%,
+      64% 54%,
+      76% 56%,
+      87% 61%,
+      95% 63%,
+      100% 59%,
+      100% 100%,
+      0% 100%
+    );
+  }
+  60% {
+    clip-path: polygon(
+      0 55%,
+      2% 58%,
+      4% 61%,
+      7% 65%,
+      9% 68%,
+      11% 72%,
+      13% 72%,
+      17% 71%,
+      19% 71%,
+      22% 68%,
+      24% 64%,
+      27% 62%,
+      30% 62%,
+      33% 65%,
+      36% 69%,
+      41% 71%,
+      44% 69%,
+      47% 67%,
+      51% 66%,
+      53% 66%,
+      56% 66%,
+      59% 68%,
+      62% 71%,
+      65% 74%,
+      68% 75%,
+      71% 76%,
+      74% 76%,
+      77% 74%,
+      80% 71%,
+      82% 67%,
+      84% 63%,
+      86% 59%,
+      89% 57%,
+      91% 56%,
+      95% 56%,
+      97% 59%,
+      100% 61%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
 .welcome {
   /* display: none; */
   z-index: 1;
@@ -93,8 +158,8 @@ header::before {
   border-radius: 1rem;
   width: 30vw;
   height: 30vh;
-  margin-right: 3rem;
-  margin-bottom: 3rem;
+  /* margin-right: 3rem;
+  margin-bottom: 3rem; */
   padding: 0 2rem 2rem 0;
   flex-direction: column;
   justify-content: flex-end;
