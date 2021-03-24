@@ -2,24 +2,29 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  color: gainsboro; /* fallback color */
+  color: #dde2e1;
 }
 :root {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 16px;
   /* color: black; */
 }
-
+body {
+  background-color: #001816;
+}
 /* ---------------------------------------------- */
 /* shared properties from all areas */
 /* all centered flexes */
 header,
+.welcome,
 section,
 form ul,
 form ul li {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 3px solid blue;
+  /* border: 3px solid blue; */
 }
 /* ---------------------------------------------- */
 /* general setup */
@@ -36,10 +41,31 @@ section {
 header {
   height: 50vh;
   width: 100vw;
+  /* background-color: #006e65; */
 }
 h1,
 h2 {
   border: 2px solid orange;
+}
+/* welcome text */
+.welcome {
+  background-color: #99a3a2;
+  /* background-color: #cce2e0; */
+  border-radius: 1rem;
+  width: 50vw;
+  height: 30vh;
+  flex-direction: column;
+  /* transform: translateX(-20vw);
+  transition: 2s linear reverse; */
+  animation: fly-in-from-left 3s ease-in-out;
+}
+@keyframes fly-in-from-left {
+  from {
+    transform: translateX(-400px);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 /* ---------------------------------------------- */
 /* bottom half welcome page (navigation) */
@@ -57,14 +83,10 @@ nav ul li {
   border: 1px solid green;
   /* max-height: 5vh;
   min-height: 1rem; */
-  height: 10vh;
+  height: calc(100% / 3);
   width: 100vw;
   list-style: none;
   background-color: lightblue;
-}
-.welcome-home {
-  height: 20vh;
-  width: 100vw;
 }
 a {
   border: 1px solid plum;
@@ -73,6 +95,15 @@ a {
   width: 100%;
   color: black;
 }
+/* home nav */
+nav ul li:first-child {
+  display: none;
+}
+/* .welcome-home {
+  height: 20vh;
+  width: 100vw;
+} */
+
 /* ---------------------------------------------- */
 /* about me section */
 
