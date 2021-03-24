@@ -8,7 +8,7 @@
     <title>Viviane's Portfolio</title>
   </head>
   <body>
-    <header>
+    <header id="home">
       <div class="welcome">
         <h1>Hi! I'm Viviane...</h1>
         <h2>I am learning to become a great webdeveloper...</h2>
@@ -16,11 +16,66 @@
     </header>
     <nav>
       <ul>
-        <li><a href="#home">Home</a></li>
+        <li>
+          <div class="home">
+            <a href="#home">Home</a>
+          </div>
+        </li>
         <li><a href="#about">About me</a></li>
         <li><a href="#projects">View my work</a></li>
         <li><a href="#contact">Contact me</a></li>
       </ul>
     </nav>
+    <section id="about">
+      <h3>About me</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam voluptates
+        magni perferendis maxime facilis enim fuga labore amet commodi
+        asperiores quos ipsam perspiciatis, qui fugit aperiam consectetur? Qui
+        ullam culpa accusantium sit aut cupiditate ipsam alias quibusdam vitae?
+        Alias eaque quasi autem tenetur doloremque? Voluptatibus, repellat
+        voluptate. Ut, repellat nobis? Earum voluptatem doloribus neque
+        inventore qui nulla temporibus sit, hic eos vero sint ipsa quas
+        accusamus voluptates dignissimos maxime quisquam est eaque modi officiis
+        itaque iure in consequuntur ad. Cupiditate quas voluptas nihil ab porro
+        placeat amet temporibus est ipsam maiores, blanditiis, illum voluptate
+        debitis beatae perspiciatis, accusamus aspernatur facilis?
+      </p>
+    </section>
+    <section id="projects">
+      <h3>My work</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam voluptates
+        magni perferendis maxime facilis enim fuga labore amet commodi
+        asperiores quos ipsam perspiciatis, qui fugit aperiam consectetur? Qui
+        ullam culpa accusantium sit aut cupiditate ipsam alias quibusdam vitae?
+        Alias eaque quasi autem tenetur doloremque? Voluptatibus, repellat
+        voluptate. Ut, repellat nobis? Earum voluptatem doloribus neque
+        inventore qui nulla temporibus sit, hic eos vero sint ipsa quas
+        accusamus voluptates dignissimos maxime quisquam est eaque modi officiis
+        itaque iure in consequuntur ad. Cupiditate quas voluptas nihil ab porro
+        placeat amet temporibus est ipsam maiores, blanditiis, illum voluptate
+        debitis beatae perspiciatis, accusamus aspernatur facilis?
+      </p>
+    </section>
+    <section id="contact">
+      <h3>Send me a message</h3>
+      <form action="">
+        <ul>
+          <li>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="visitor_name" />
+          </li>
+          <li>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="visitor_email" />
+          </li>
+          <li>
+            <label for="message">Message:</label>
+            <textarea id="message" name="visitor_message"></textarea>
+          </li>
+        </ul>
+      </form>
+    </section>
   </body>
 </html>

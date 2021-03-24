@@ -6,7 +6,7 @@
 :root {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 16px;
-  color: black;
+  /* color: black; */
 }
 
 /* ---------------------------------------------- */
@@ -14,13 +14,20 @@
 
 /* shared properties */
 /* all the flexes */
-header {
+header,
+section {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+/* sections */
+section {
+  height: 100vh;
+  width: 100vw;
+}
+
 /* ---------------------------------------------- */
-/* top half */
+/* top half welcome page*/
 header {
   border: 3px solid blue;
   height: 49.5vh;
@@ -31,7 +38,7 @@ h2 {
   border: 2px solid orange;
 }
 /* ---------------------------------------------- */
-/* bottom half (navigation) */
+/* bottom half welcome page (navigation) */
 nav {
   border: 1px solid black;
   height: 49.5vh;
@@ -49,10 +56,24 @@ li {
   height: 10vh;
   width: 100vw;
   list-style: none;
+  background-color: lightblue;
+}
+.home {
+  height: 20vh;
+  width: 100vw;
 }
 a {
   border: 1px solid plum;
   text-decoration: none;
   height: 100%;
   width: 100%;
+  color: black;
 }
+/* ---------------------------------------------- */
+/* about me section */
+
+/* ---------------------------------------------- */
+/* my work/projects section */
+
+/* ---------------------------------------------- */
+/* contact section */
