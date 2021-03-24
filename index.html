@@ -63,23 +63,71 @@
       </p>
     </section>
     <section id="contact">
+      <h3>This is where you can find me</h3>
+      <div class="social-media icon-container"></div>
       <h3>Send me a message</h3>
-      <form action="">
-        <ul>
-          <li>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="visitor_name" />
+      <form action="" class="form-outer-container">
+        <ul class="form-inner-container">
+          <li class="fullname-container">
+            <div class="first-last-name">
+              <div class="firstname">
+                <div class="label">
+                  <label for="firstname">Name:</label>
+                </div>
+                <div class="input">
+                  <input
+                    type="text"
+                    id="firstname"
+                    class="firstname"
+                    name="visitor_firstname"
+                    placeholder="Your firstname"
+                  />
+                </div>
+              </div>
+
+              <div class="lastname">
+                <div class="label">
+                  <label for="lastname">Name:</label>
+                </div>
+                <div class="input">
+                  <input
+                    type="text"
+                    id="lastname"
+                    class="lastname"
+                    name="visitor_lastname"
+                    placeholder="Your lastname"
+                  />
+                </div>
+              </div>
+            </div>
           </li>
-          <li>
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="visitor_email" />
+          <li class="email-container">
+            <div class="label">
+              <label for="email">E-mail:</label>
+            </div>
+            <input
+              type="email"
+              id="email"
+              class="email"
+              name="visitor_email"
+              placeholder="Your email address"
+            />
           </li>
-          <li>
-            <label for="message">Message:</label>
-            <textarea id="message" name="visitor_message"></textarea>
+          <li class="message-container">
+            <div class="label">
+              <label for="message">Message:</label>
+            </div>
+            <textarea
+              id="message"
+              class="message"
+              name="visitor_message"
+              placeholder="Write your message here..."
+            ></textarea>
+            <button type="submit">Send</button>
           </li>
         </ul>
       </form>
+      <footer>Copyright stuff</footer>
     </section>
   </body>
 </html>
