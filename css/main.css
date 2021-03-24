@@ -16,7 +16,6 @@ body {
 /* ---------------------------------------------- */
 /* shared properties from all areas */
 /* all centered flexes */
-header,
 .welcome,
 section,
 form ul,
@@ -42,6 +41,10 @@ header {
   height: 50vh;
   width: 100vw;
   /* background-color: #006e65; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 3rem;
 }
 h1,
 h2 {
@@ -52,16 +55,19 @@ h2 {
   background-color: #99a3a2;
   /* background-color: #cce2e0; */
   border-radius: 1rem;
-  width: 50vw;
+  width: 30vw;
   height: 30vh;
+  padding: 0 2rem 2rem 0;
   flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
   /* transform: translateX(-20vw);
   transition: 2s linear reverse; */
-  animation: fly-in-from-left 3s ease-in-out;
+  animation: fly-in-from-left 4s ease-in-out;
 }
 @keyframes fly-in-from-left {
   from {
-    transform: translateX(-400px);
+    transform: translateX(-100vw);
   }
   to {
     transform: translateX(0);
