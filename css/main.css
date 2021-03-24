@@ -48,12 +48,12 @@ nav {
   height: 50vh;
   width: 100vw;
 }
-ul {
+nav ul {
   border: 1px solid skyblue;
   height: inherit;
   width: 100vw;
 }
-li {
+nav ul li {
   border: 1px solid green;
   /* max-height: 5vh;
   min-height: 1rem; */
@@ -88,21 +88,26 @@ form ul {
   border: green 3px solid;
 }
 form ul li {
-  height: 20vh;
-  width: 30vw;
+  /* height: 28vh; */
+  width: 40vw;
   margin-top: 1em;
-  justify-content: space-around;
+  /* justify-content: space-around; */
+  border: hotpink 2px dotted;
 }
 form div {
   height: auto;
   width: 100%;
   /* background-color: darkgray; */
   border: darkmagenta 1px solid;
-  margin: 1rem;
+  /* margin: 1rem; */
 }
 
 /* name input area */
-.first-last-name {
+.fullname-container {
+}
+.first-last-name,
+.firstname,
+.lastname {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -121,6 +126,12 @@ textarea {
   height: 10rem;
   width: 20vw;
 }
+form ul li:last-child,
+.button-container {
+  text-align: end;
+}
+
+/* button style */
 
 /* ......................... */
 /* footer */
