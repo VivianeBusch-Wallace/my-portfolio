@@ -10,9 +10,8 @@
 }
 
 /* ---------------------------------------------- */
-/* general setup */
-/* shared properties */
-/* all the flexes */
+/* shared properties from all areas */
+/* all centered flexes */
 header,
 section,
 form ul,
@@ -22,6 +21,8 @@ form ul li {
   align-items: center;
   border: 3px solid blue;
 }
+/* ---------------------------------------------- */
+/* general setup */
 /* sections */
 section {
   height: 100vh;
@@ -54,8 +55,8 @@ ul {
 }
 li {
   border: 1px solid green;
-  max-height: 5vh;
-  min-height: 1rem;
+  /* max-height: 5vh;
+  min-height: 1rem; */
   height: 10vh;
   width: 100vw;
   list-style: none;
@@ -84,22 +85,44 @@ form ul {
   flex-direction: column;
   height: 70vh;
   width: 50vw;
+  border: green 3px solid;
 }
 form ul li {
-  height: 30vh;
-  width: 50vh;
-  justify-content: space-evenly;
-  /* flex-direction: row; */
-}
-form li {
+  height: 20vh;
+  width: 30vw;
   margin-top: 1em;
+  justify-content: space-around;
 }
-input[type="text"],
-input[type="email"],
+form div {
+  height: auto;
+  width: 100%;
+  /* background-color: darkgray; */
+  border: darkmagenta 1px solid;
+  margin: 1rem;
+}
+
+/* name input area */
+.first-last-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+input[type="text"] {
+  height: 2rem;
+  width: 10vw;
+}
+/* email input area */
+input[type="email"] {
+  height: 2rem;
+  width: 10vw;
+}
+/* text input area */
 textarea {
-  height: 10vh;
-  width: 20vh;
+  height: 10rem;
+  width: 20vw;
 }
+
+/* ......................... */
 /* footer */
 footer {
   background-color: cornflowerblue;

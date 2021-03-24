@@ -72,7 +72,7 @@
             <div class="first-last-name">
               <div class="firstname">
                 <div class="label">
-                  <label for="firstname">Name:</label>
+                  <label for="firstname">Firstname:</label>
                 </div>
                 <div class="input">
                   <input
@@ -87,7 +87,7 @@
 
               <div class="lastname">
                 <div class="label">
-                  <label for="lastname">Name:</label>
+                  <label for="lastname">Lastname:</label>
                 </div>
                 <div class="input">
                   <input
@@ -105,25 +105,33 @@
             <div class="label">
               <label for="email">E-mail:</label>
             </div>
-            <input
-              type="email"
-              id="email"
-              class="email"
-              name="visitor_email"
-              placeholder="Your email address"
-            />
+            <div class="email-container">
+              <input
+                type="email"
+                id="email"
+                class="email"
+                name="visitor_email"
+                placeholder="Your email address"
+              />
+            </div>
           </li>
           <li class="message-container">
             <div class="label">
               <label for="message">Message:</label>
             </div>
-            <textarea
-              id="message"
-              class="message"
-              name="visitor_message"
-              placeholder="Write your message here..."
-            ></textarea>
-            <button type="submit">Send</button>
+            <div class="message-container">
+              <textarea
+                id="message"
+                class="message"
+                name="visitor_message"
+                placeholder="Write your message here..."
+              ></textarea>
+            </div>
+          </li>
+          <li>
+            <div class="button-container">
+              <button type="submit">Send</button>
+            </div>
           </li>
         </ul>
       </form>
