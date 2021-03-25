@@ -265,6 +265,7 @@ nav ul li:last-child {
   background-color: #4d9a93;
 }
 a {
+  display: block;
   border: 1px solid plum;
   text-decoration: none;
   height: 100%;
