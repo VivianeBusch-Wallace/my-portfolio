@@ -6,8 +6,17 @@
   color: #dde2e1;
 }
 :root {
-  /* font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; */
-  font-family: "Open Sans", Montserrat, Raleway;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Advent Pro", sans-serif;
+  /* font-family: "Arsenal", sans-serif; */
+  font-family: "Athiti", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
+  /* font-family: "Open Sans", sans-serif; */
+  /* font-family: "Raleway", sans-serif; */
+  /* font-family: "Signika", sans-serif; */
+  /* font-family: "Suranna", serif; */
+  /* font-family: "Varela Round", sans-serif; */
+
   font-size: 16px;
   /* color: black; */
   scroll-behavior: smooth;
