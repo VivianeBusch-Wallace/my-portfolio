@@ -306,7 +306,7 @@ nav ul li:last-child:hover {
   height: 500%;
   transition: 1.5s ease-in-out;
 }
-a {
+li > a {
   display: block;
   border: 1px solid plum;
   text-decoration: none;
@@ -321,10 +321,10 @@ a {
 nav ul li:first-child {
   display: none;
 }
-/* .welcome-home {
-  height: 20vh;
-  width: 100vw;
-} */
+/* contact me nav */
+.social-media-nav a {
+  z-index: 4;
+}
 
 /* ---------------------------------------------- */
 /* about me section */
