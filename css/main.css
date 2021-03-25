@@ -261,42 +261,46 @@ nav ul li {
 }
 nav ul li:nth-child(1) {
   background-color: #006e65;
-  height: 5vh;
+  height: 7vh;
   border-top-left-radius: 10rem;
   width: 40vw;
 }
 nav ul li:nth-child(2) {
   background-color: #1a7d74;
-  height: 5vh;
+  height: 7vh;
   border-top-left-radius: 10rem;
   width: 60vw;
 }
 nav ul li:nth-child(3) {
   background-color: #338b84;
-  height: 5vh;
+  height: 7vh;
   border-top-left-radius: 10rem;
   width: 80vw;
 }
 nav ul li:last-child {
   background-color: #4d9a93;
-  height: 100%;
   border-top-left-radius: 10rem;
+  height: 90%;
   width: 100vw;
 }
 nav ul li:nth-child(1):hover {
-  height: 80%;
+  height: 500%;
+  transition: 1.5s ease-in-out;
 }
 nav ul li:nth-child(2):hover {
-  height: 80%;
+  height: 500%;
+  transition: 1.5s ease-in-out;
 }
 /* nav ul li:nth-child(2):hover + nav ul li:nth-child(3 + 2) {
   height: 10%;
 } */
 nav ul li:nth-child(3):hover {
-  height: 80%;
+  height: 500%;
+  transition: 1.5s ease-in-out;
 }
 nav ul li:last-child:hover {
-  height: 80%;
+  height: 500%;
+  transition: 1.5s ease-in-out;
 }
 a {
   display: block;
