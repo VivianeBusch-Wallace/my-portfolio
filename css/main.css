@@ -31,7 +31,8 @@ body {
 .navigation-list,
 section,
 form ul,
-form ul li {
+form ul li,
+footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,6 +45,7 @@ section {
   height: 100vh;
   width: 100vw;
   flex-direction: column;
+  padding: 3rem;
 }
 
 /* ---------------------------------------------- */
@@ -399,8 +401,24 @@ form ul li:last-child,
 
 /* ......................... */
 /* footer */
+#contact {
+  padding: 3rem 0 0 0;
+  /* background-color: chartreuse; */
+  position: relative;
+}
 footer {
-  background-color: cornflowerblue;
+  /* background-color: cornflowerblue; */
   width: 100%;
   height: 10vh;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+th {
+  width: 100vw;
+  border: chartreuse 1px solid;
+}
+col {
+  width: calc(100% / 4);
+  background-color: cyan 2px dotted;
 }
