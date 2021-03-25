@@ -46,6 +46,7 @@ section {
   width: 100vw;
   flex-direction: column;
   padding: 3rem;
+  position: relative;
 }
 
 /* ---------------------------------------------- */
@@ -341,7 +342,21 @@ nav ul li:first-child {
 
 /* ---------------------------------------------- */
 /* about me section */
-
+/* back to top button */
+.back {
+  height: auto;
+  width: 1.4rem;
+  /* margin-top: 120vh; */
+  border: yellow 2px solid;
+  position: sticky;
+  /* justify-content: end; */
+  /* align-self: flex-end; */
+  right: 0;
+  bottom: 0;
+}
+.back-top {
+  border: cyan 2px solid;
+}
 /* ---------------------------------------------- */
 /* my work/projects section */
 
