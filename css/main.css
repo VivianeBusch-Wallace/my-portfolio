@@ -17,6 +17,7 @@ body {
 /* shared properties from all areas */
 /* all centered flexes */
 .welcome,
+.navigation-list,
 section,
 form ul,
 form ul li {
@@ -47,12 +48,18 @@ header {
   padding: 3rem;
   position: relative;
 }
+/* welcome text */
 h1,
 h2 {
   z-index: 2;
   color: #001816;
 }
-/* welcome text */
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 1.7rem;
+}
 header::before {
   background-color: #00635b;
   content: "";
@@ -207,7 +214,6 @@ header::after {
     );
   }
 }
-
 .welcome {
   z-index: 1;
   /* background-color: #99a3a2; */
@@ -239,35 +245,64 @@ nav {
   height: 50vh;
   width: 100vw;
 }
-nav ul {
+.navigation-list {
   border: 1px solid skyblue;
   height: inherit;
   width: 100vw;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 nav ul li {
   border: 1px solid green;
-  /* max-height: 5vh;
-  min-height: 1rem; */
-  height: calc(100% / 3);
-  width: 100vw;
   list-style: none;
+  padding: 1rem 3rem;
+  font-size: 2rem;
 }
 nav ul li:nth-child(1) {
   background-color: #006e65;
+  height: 5vh;
+  border-top-left-radius: 10rem;
+  width: 40vw;
 }
 nav ul li:nth-child(2) {
   background-color: #1a7d74;
+  height: 5vh;
+  border-top-left-radius: 10rem;
+  width: 60vw;
 }
 nav ul li:nth-child(3) {
   background-color: #338b84;
+  height: 5vh;
+  border-top-left-radius: 10rem;
+  width: 80vw;
 }
 nav ul li:last-child {
   background-color: #4d9a93;
+  height: 100%;
+  border-top-left-radius: 10rem;
+  width: 100vw;
+}
+nav ul li:nth-child(1):hover {
+  height: 80%;
+}
+nav ul li:nth-child(2):hover {
+  height: 80%;
+}
+/* nav ul li:nth-child(2):hover + nav ul li:nth-child(3 + 2) {
+  height: 10%;
+} */
+nav ul li:nth-child(3):hover {
+  height: 80%;
+}
+nav ul li:last-child:hover {
+  height: 80%;
 }
 a {
   display: block;
   border: 1px solid plum;
   text-decoration: none;
+  text-align: end;
   height: 100%;
   width: 100%;
   color: black;
