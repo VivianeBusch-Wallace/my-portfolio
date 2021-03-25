@@ -11,7 +11,7 @@
   /* color: black; */
 }
 body {
-  background-color: #001816;
+  background-color: #002c28;
 }
 /* ---------------------------------------------- */
 /* shared properties from all areas */
@@ -221,7 +221,7 @@ header::after {
   opacity: 0.8;
   border-radius: 1rem;
   width: 30vw;
-  height: 30vh;
+  height: 28vh;
   padding: 0 2rem 2rem 0;
   flex-direction: column;
   justify-content: flex-end;
@@ -241,17 +241,18 @@ header::after {
 /* ---------------------------------------------- */
 /* bottom half welcome page (navigation) */
 nav {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   height: 50vh;
   width: 100vw;
 }
 .navigation-list {
-  border: 1px solid skyblue;
+  /* border: 1px solid skyblue; */
   height: inherit;
   width: 100vw;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
+  background-color: #1a7d74;
 }
 nav ul li {
   border: 1px solid green;
@@ -260,25 +261,28 @@ nav ul li {
   font-size: 2rem;
 }
 nav ul li:nth-child(1) {
-  background-color: #006e65;
-  height: 7vh;
+  background: linear-gradient(130deg, #80b7b2, #1a7d74);
+  height: 10vh;
   border-top-left-radius: 10rem;
   width: 40vw;
 }
 nav ul li:nth-child(2) {
-  background-color: #1a7d74;
-  height: 7vh;
+  background-color: #006e65;
+  background: linear-gradient(130deg, #80b7b2, #006e65);
+  height: 10vh;
   border-top-left-radius: 10rem;
   width: 60vw;
 }
 nav ul li:nth-child(3) {
-  background-color: #338b84;
-  height: 7vh;
+  background-color: #00635b;
+  background: linear-gradient(130deg, #66a8a3, #00635b);
+  height: 10vh;
   border-top-left-radius: 10rem;
   width: 80vw;
 }
 nav ul li:last-child {
-  background-color: #4d9a93;
+  background: linear-gradient(130deg, #4d9a93, #005851);
+  /* background: linear-gradient(#e66465, #9198e5); */
   border-top-left-radius: 10rem;
   height: 90%;
   width: 100vw;
@@ -307,9 +311,11 @@ a {
   border: 1px solid plum;
   text-decoration: none;
   text-align: end;
+  padding: 1rem;
   height: 100%;
   width: 100%;
-  color: black;
+  color: #cce2e0;
+  font-weight: bold;
 }
 /* home nav */
 nav ul li:first-child {
