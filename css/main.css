@@ -50,6 +50,7 @@ header {
 h1,
 h2 {
   z-index: 2;
+  color: #001816;
 }
 /* welcome text */
 header::before {
@@ -144,7 +145,7 @@ header::after {
   0%,
   100% {
     clip-path: polygon(
-      0% 60%,
+      0% 68%,
       7% 65%,
       15% 66%,
       20% 67%,
@@ -165,7 +166,7 @@ header::after {
   }
   30% {
     clip-path: polygon(
-      0% 60%,
+      0% 67%,
       6% 65%,
       13% 60%,
       20% 56%,
@@ -208,16 +209,13 @@ header::after {
 }
 
 .welcome {
-  /* display: none; */
   z-index: 1;
-  background-color: #99a3a2;
-  /* background-color: #cce2e0; */
+  /* background-color: #99a3a2; */
+  background-color: #cce2e0;
   opacity: 0.8;
   border-radius: 1rem;
   width: 30vw;
   height: 30vh;
-  /* margin-right: 3rem;
-  margin-bottom: 3rem; */
   padding: 0 2rem 2rem 0;
   flex-direction: column;
   justify-content: flex-end;
@@ -253,7 +251,18 @@ nav ul li {
   height: calc(100% / 3);
   width: 100vw;
   list-style: none;
-  background-color: lightblue;
+}
+nav ul li:nth-child(1) {
+  background-color: #006e65;
+}
+nav ul li:nth-child(2) {
+  background-color: #1a7d74;
+}
+nav ul li:nth-child(3) {
+  background-color: #338b84;
+}
+nav ul li:last-child {
+  background-color: #4d9a93;
 }
 a {
   border: 1px solid plum;
