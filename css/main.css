@@ -82,6 +82,42 @@ h1 {
 h2 {
   font-size: 1.7rem;
 }
+.welcome {
+  z-index: 1;
+  /* background-color: #99a3a2; */
+  background-color: #cce2e0;
+  opacity: 0.8;
+  border-radius: 1rem;
+  width: 30vw;
+  height: 28vh;
+  padding: 0 2rem 2rem 0;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  /* transform: translateX(-20vw);
+  transition: 2s linear reverse; */
+  animation: fly-in-from-left 4s ease-in-out;
+}
+@keyframes fly-in-from-left {
+  from {
+    transform: translateX(-100vw);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+/* for bubbles */
+/* animation: bubbles 10s linear infinite;
+}
+@keyframes bubbles {
+  0%,
+  100% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  } */
+
 /* wave behind */
 header::before {
   /* background-color: #00635b; */
@@ -240,30 +276,7 @@ header::after {
     );
   }
 }
-.welcome {
-  z-index: 1;
-  /* background-color: #99a3a2; */
-  background-color: #cce2e0;
-  opacity: 0.8;
-  border-radius: 1rem;
-  width: 30vw;
-  height: 28vh;
-  padding: 0 2rem 2rem 0;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-  /* transform: translateX(-20vw);
-  transition: 2s linear reverse; */
-  animation: fly-in-from-left 4s ease-in-out;
-}
-@keyframes fly-in-from-left {
-  from {
-    transform: translateX(-100vw);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
+
 /* ---------------------------------------------- */
 /* bottom half welcome page (navigation) */
 nav {
