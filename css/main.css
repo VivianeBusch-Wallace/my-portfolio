@@ -53,7 +53,6 @@ section {
   padding: 3rem;
   position: relative;
 }
-
 /* ---------------------------------------------- */
 /* welcome page */
 /* top half welcome page*/
@@ -107,18 +106,6 @@ h2 {
     transform: translateX(0);
   }
 }
-/* for bubbles */
-/* animation: bubbles 10s linear infinite;
-}
-@keyframes bubbles {
-  0%,
-  100% {
-    transform: rotate(-5deg);
-  }
-  50% {
-    transform: rotate(5deg);
-  } */
-
 /* wave behind */
 header::before {
   /* background-color: #00635b; */
@@ -376,6 +363,27 @@ nav ul li:first-child {
 /* about me section */
 /* ---------------------------------------------- */
 /* my work/projects section */
+.submarine {
+  background-color: darkblue;
+  width: 80vw;
+  height: 60vh;
+}
+.project1-container {
+  border: darkkhaki 2px solid;
+}
+.proj-img {
+  border: darkturquoise 1px dashed;
+}
+.chin-zodiac-img {
+  width: 6rem;
+  height: auto;
+}
+.proj-explanation {
+  border: pink 2px solid;
+}
+.proj-explanation p {
+  border: violet 2px solid;
+}
 
 /* ---------------------------------------------- */
 /* contact section */
