@@ -22,10 +22,11 @@
   scroll-behavior: smooth;
 }
 body {
-  /* background-color: #002c28; */
   background: linear-gradient(#115a54 10%, #002c28);
+  overflow: hidden;
   /* display: flex;
   flex-direction: column; */
+  /* background-color: #002c28; */
 }
 /* ---------------------------------------------- */
 /* shared properties from all areas */
@@ -483,6 +484,16 @@ th {
 }
 /* ---------------------------------------------- */
 /* bubbles */
+.bubble-container {
+  width: 100%;
+  height: 400vh;
+  /* background-color: blue; */
+  position: absolute;
+  z-index: -1;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+}
 .bubbles {
   width: 3rem;
   height: 3rem;
@@ -495,10 +506,88 @@ th {
 }
 @keyframes bubble-movement {
   from {
-    bottom: -5%;
+    bottom: -2%;
   }
   to {
     bottom: 55%;
     opacity: 0;
   }
+}
+
+.bubbles:nth-child(1) {
+  width: 2rem;
+  height: 2rem;
+  opacity: 0.5;
+  left: 10%;
+  animation-duration: 10s;
+}
+.bubbles:nth-child(2) {
+  width: 1rem;
+  height: 1rem;
+  opacity: 0.5;
+  left: 20%;
+  animation-delay: 3s;
+  animation-duration: 9s;
+}
+.bubbles:nth-child(3) {
+  width: 3rem;
+  height: 3rem;
+  opacity: 0.5;
+  left: 30%;
+  animation-delay: 1s;
+  animation-duration: 12s;
+}
+.bubbles:nth-child(4) {
+  width: 1rem;
+  height: 1rem;
+  opacity: 0.5;
+  left: 50%;
+  animation-duration: 13s;
+}
+.bubbles:nth-child(5) {
+  width: 3rem;
+  height: 3rem;
+  opacity: 0.5;
+  left: 60%;
+  animation-delay: 4s;
+  animation-duration: 8s;
+}
+.bubbles:nth-child(6) {
+  width: 1rem;
+  height: 1rem;
+  opacity: 0.5;
+  left: 80%;
+  animation-delay: 2.5s;
+  animation-duration: 12s;
+}
+.bubbles:nth-child(7) {
+  width: 2rem;
+  height: 2rem;
+  opacity: 0.5;
+  left: 90%;
+  animation-duration: 9s;
+}
+.bubbles:nth-child(8) {
+  width: 4rem;
+  height: 4rem;
+  opacity: 0.5;
+  right: 5%;
+  animation-delay: 1s;
+  animation-duration: 10s;
+}
+.bubbles:nth-child(9) {
+  width: 1rem;
+  height: 1rem;
+  opacity: 0.5;
+  right: 30%;
+  animation-delay: 4.5s;
+  animation-duration: 12s;
+}
+.bubbles:nth-child(10) {
+  width: 2rem;
+  height: 2rem;
+  opacity: 0.5;
+  right: 70%;
+  animation-delay: 6.5s;
+  animation-duration: 8s;
 }
