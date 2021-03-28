@@ -24,6 +24,8 @@
 body {
   /* background-color: #002c28; */
   background: linear-gradient(#115a54 10%, #002c28);
+  /* display: flex;
+  flex-direction: column; */
 }
 /* ---------------------------------------------- */
 /* shared properties from all areas */
@@ -377,11 +379,18 @@ nav ul li:first-child {
 
 /* ---------------------------------------------- */
 /* contact section */
+.contact-section {
+  padding: 3rem 0 0 0;
+  /* background-color: chartreuse; */
+  position: relative;
+  border: rgb(25, 209, 209) 4px solid;
+  display: flex;
+}
 /* social media and email part */
 .icon-container {
   /* flex-direction: row; */
   justify-content: space-evenly;
-  width: 20vw;
+  width: 30vw;
   background-color: darkmagenta;
 }
 .icon {
@@ -442,23 +451,18 @@ form ul li:last-child,
 
 /* ......................... */
 /* footer */
-#contact {
-  padding: 3rem 0 0 0;
-  /* background-color: chartreuse; */
-  position: relative;
-}
 footer {
   /* background-color: cornflowerblue; */
   width: 100%;
   height: 10vh;
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  margin-top: 10vh;
+  border: indigo 1px solid;
+  align-self: flex-end;
+  display: flex;
+  justify-content: flex-ends;
+  align-items: flex-end;
 }
 th {
-  width: 100vw;
+  width: calc(100vw / 4);
   border: chartreuse 1px solid;
-}
-col {
-  width: calc(100% / 4);
 }
