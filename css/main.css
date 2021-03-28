@@ -31,6 +31,7 @@ body {
 .welcome,
 .navigation-list,
 section,
+.icon-container,
 form ul,
 form ul li,
 footer {
@@ -309,6 +310,7 @@ nav ul li:last-child {
   border-top-left-radius: 10rem;
   height: 90%;
   width: 95vw;
+  display: block;
 }
 /* reaction of navigation on hover */
 nav ul li:nth-child(1):hover {
@@ -331,8 +333,8 @@ nav ul li:last-child:hover {
   transition: 1.7s ease-in-out;
 }
 nav li > a {
-  display: block;
-  /* border: 1px solid plum; */
+  display: inline-block;
+  border: 1px solid plum;
   text-decoration: none;
   text-align: end;
   padding: 1rem;
@@ -347,7 +349,9 @@ nav ul li:first-child {
 }
 /* contact me nav */
 .social-media-nav a {
-  z-index: 4;
+  /* z-index: 4; */
+  display: inline-block;
+  border: darkorange 2px solid;
 }
 
 /* ---------------------------------------------- */
@@ -373,6 +377,17 @@ nav ul li:first-child {
 
 /* ---------------------------------------------- */
 /* contact section */
+/* social media and email part */
+.icon-container {
+  /* flex-direction: row; */
+  justify-content: space-evenly;
+  width: 20vw;
+  background-color: darkmagenta;
+}
+.icon {
+  font-size: 2rem;
+}
+/* form part */
 form ul {
   flex-direction: column;
   height: 70vh;
@@ -446,5 +461,4 @@ th {
 }
 col {
   width: calc(100% / 4);
-  background-color: cyan 2px dotted;
 }
