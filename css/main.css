@@ -73,7 +73,7 @@ header {
 /* welcome text */
 h1,
 h2 {
-  z-index: 2;
+  /* z-index: 2; */
   color: #001816;
 }
 h1 {
@@ -467,4 +467,25 @@ footer {
 th {
   width: calc(100vw / 4);
   border: chartreuse 1px solid;
+}
+/* ---------------------------------------------- */
+/* bubbles */
+.bubbles {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: thistle;
+  position: absolute;
+  bottom: 0%;
+  opacity: 0.1;
+  animation: bubble-movement 10s ease-in-out infinite;
+}
+@keyframes bubble-movement {
+  from {
+    bottom: -5%;
+  }
+  to {
+    bottom: 55%;
+    opacity: 0;
+  }
 }
