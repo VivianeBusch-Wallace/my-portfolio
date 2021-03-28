@@ -66,6 +66,8 @@ header {
   padding: 3rem;
   position: relative;
   background-color: #002c28;
+  background: radial-gradient(circle, darkmagenta, indigo);
+  /* transform-origin: top right; */
   z-index: -3;
 }
 /* welcome text */
