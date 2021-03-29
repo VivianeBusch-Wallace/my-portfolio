@@ -400,9 +400,13 @@ nav ul li:first-child {
   /* overflow: hidden; */
 }
 .proj-img img {
+  border: grey double 0.5rem;
   border-radius: 3rem;
   margin-bottom: 1rem;
-  box-shadow: 0.3rem 0.3rem 1rem darkgrey;
+  box-shadow: 1rem 0rem 1rem #002c28;
+}
+.proj-img:hover img {
+  box-shadow: 1.4rem 0rem 2rem rgb(41, 41, 41);
 }
 .proj-explanation {
   /* border: pink 2px solid; */
