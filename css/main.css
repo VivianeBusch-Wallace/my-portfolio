@@ -34,6 +34,9 @@ body {
 .welcome,
 .navigation-list,
 section,
+.submarine,
+.submarine:nth-child(n),
+.proj-img,
 .icon-container,
 form ul,
 form ul li,
@@ -365,18 +368,21 @@ nav ul li:first-child {
 /* my work/projects section */
 .submarine {
   background-color: darkblue;
-  width: 80vw;
+  width: 90vw;
   height: 60vh;
+  position: relative;
 }
-.project1-container {
+.submarine:nth-child(n) {
   border: darkkhaki 2px solid;
+  width: calc(100% / 4);
+  height: 30vh;
 }
 .proj-img {
   border: darkturquoise 1px dashed;
-}
-.chin-zodiac-img {
-  width: 6rem;
-  height: auto;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  overflow: hidden;
 }
 .proj-explanation {
   border: pink 2px solid;
@@ -384,6 +390,15 @@ nav ul li:first-child {
 .proj-explanation p {
   border: violet 2px solid;
 }
+/* cinese zodiac app specific settings */
+.chin-zodiac-img {
+  width: auto;
+  height: 10rem;
+}
+/* youtube app specific settings */
+
+/* mobile app specific settings */
+/* cinese zodiac app specific settings */
 
 /* ---------------------------------------------- */
 /* contact section */
