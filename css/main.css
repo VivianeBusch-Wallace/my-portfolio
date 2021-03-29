@@ -59,6 +59,13 @@ section {
 }
 h3 {
   font-size: 3rem;
+  margin: 1rem 0;
+}
+h3 > p {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 2rem;
 }
 /* ---------------------------------------------- */
 /* welcome page */
@@ -448,6 +455,7 @@ nav ul li:first-child {
   justify-content: space-evenly;
   width: 30vw;
   background-color: darkmagenta;
+  margin: 2rem 0;
 }
 .icon {
   font-size: 2rem;
@@ -455,28 +463,26 @@ nav ul li:first-child {
 /* form part */
 form ul {
   flex-direction: column;
-  height: 70vh;
+  height: 50vh;
   width: 50vw;
-  border: green 3px solid;
+  /* border: green 3px solid; */
 }
 form ul li {
   /* height: 28vh; */
   width: 40vw;
   margin-top: 1em;
   /* justify-content: space-around; */
-  border: hotpink 2px dotted;
+  /* border: hotpink 2px dotted; */
 }
 form div {
   height: auto;
   width: 100%;
   /* background-color: darkgray; */
-  border: darkmagenta 1px solid;
+  /* border: darkmagenta 1px solid; */
   /* margin: 1rem; */
 }
 
 /* name input area */
-.fullname-container {
-}
 .first-last-name,
 .firstname,
 .lastname {
@@ -484,25 +490,44 @@ form div {
   flex-direction: row;
   justify-content: space-evenly;
 }
+.lastname-label {
+  margin-left: 0.4rem;
+}
+input {
+  font-family: inherit;
+  font-size: 1rem;
+  padding-left: 0.5rem;
+}
 input[type="text"] {
   height: 2rem;
-  width: 10vw;
+  width: 15vw;
 }
 /* email input area */
 input[type="email"] {
   height: 2rem;
-  width: 10vw;
+  width: 35vw;
 }
 /* text input area */
 textarea {
-  height: 10rem;
-  width: 20vw;
+  height: 12rem;
+  width: 35vw;
+  font-family: inherit;
+  font-size: 1rem;
+  padding-left: 0.5rem;
 }
+/* send button */
 form ul li:last-child,
 .button-container {
   text-align: end;
 }
-
+button {
+  width: 5rem;
+  height: 3rem;
+  background-color: darkmagenta;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0rem 0rem 1rem black;
+}
 /* button style */
 
 /* ......................... */
