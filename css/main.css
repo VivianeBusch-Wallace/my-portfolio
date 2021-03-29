@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   color: gainsboro; /* fallback color */
-  color: #dde2e1;
+  color: white;
 }
 :root {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -34,11 +34,12 @@ body {
 .welcome,
 .navigation-list,
 section,
+.skills-container,
 .intro-projects,
 .submarine,
 .submarine :nth-child(n),
 .proj-img,
-.icon-container,
+/* .icon-container, */
 form ul,
 form ul li,
 footer {
@@ -65,6 +66,10 @@ h3 > p {
   font-size: 2rem;
 }
 h4 {
+  font-size: 2rem;
+}
+i {
+  /* color: darkmagenta; */
   font-size: 2rem;
 }
 /* ---------------------------------------------- */
@@ -375,6 +380,137 @@ nav ul li:first-child {
 
 /* ---------------------------------------------- */
 /* about me section */
+
+/* skills */
+.skills-container {
+  width: 90vw;
+  height: 50vh;
+  /* border: darkorchid 2px solid; */
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+/*My language skills*/
+.skill-levels {
+  width: 30vw;
+  /* align-self: flex-start; */
+  /* border: green 2px solid; */
+}
+/* .skill-levels label {
+  margin: 30px;
+} */
+.skill-bar {
+  background-color: lightgray;
+  margin: 0 1rem 0.5rem 1rem;
+  height: 2rem;
+}
+/* .lang {
+  text-align: right;
+} */
+.German {
+  width: 100%;
+  height: 100%;
+  background-color: dodgerblue;
+}
+.English {
+  width: 95%;
+  height: 100%;
+  background-color: gold;
+}
+.Chinese {
+  width: 65%;
+  height: 100%;
+  background-color: crimson;
+}
+.Spanish {
+  width: 30%;
+  height: 100%;
+  background-color: green;
+}
+/* work skills */
+.work-skills {
+  /* border: yellow 2px solid; */
+  width: 50%;
+  height: 50vh;
+  position: relative;
+}
+.work-skills i {
+  font-size: 5rem;
+  position: relative;
+}
+.hover-text {
+  /* display: none; */
+  width: auto;
+  height: auto;
+  background-color: darkmagenta;
+  text-align: center;
+  border-radius: 0.5rem;
+  padding: 0.2rem 0.3rem;
+  /* position: relative; */
+  position: absolute;
+  z-index: 1;
+}
+/* Javascript icon */
+.work-skills .fa-js-square {
+  top: 1rem;
+  left: 3rem;
+}
+/* .work-skills .fa-js-square:hover .js {
+  display: inline;
+} */
+/* CSS icon */
+.work-skills .fa-css3-alt {
+  top: 3rem;
+  left: 5rem;
+}
+.css {
+  top: 2rem;
+  left: 12rem;
+}
+/* html5 icon */
+.work-skills .fa-html5 {
+  top: 6rem;
+  left: 7rem;
+}
+.html {
+  top: 5rem;
+  left: 17rem;
+}
+/* word icon */
+.work-skills .fa-file-word {
+  top: 9rem;
+  left: 9rem;
+}
+.word {
+  top: 8rem;
+  left: 23rem;
+}
+/* excel icon */
+.work-skills .fa-file-excel {
+  top: 12rem;
+  left: 11rem;
+}
+.excel {
+  top: 11rem;
+  left: 29rem;
+}
+/* powerpoint icon */
+.work-skills .fa-file-powerpoint {
+  top: 15rem;
+  left: 13rem;
+}
+.ppt {
+  top: 14rem;
+  left: 35rem;
+}
+/* drawing icon */
+.work-skills .fa-pencil-ruler {
+  top: 18rem;
+  left: 15rem;
+}
+.draw {
+  top: 17rem;
+  left: 42rem;
+}
 /* ---------------------------------------------- */
 /* my work/projects section */
 /* intro to my work */
@@ -450,14 +586,14 @@ nav ul li:first-child {
   display: flex;
 }
 /* social media and email part */
-.icon-container {
+/* .icon-container { */
   /* flex-direction: row; */
   justify-content: space-evenly;
   width: 30vw;
   background-color: darkmagenta;
   margin: 2rem 0;
 }
-.icon {
+/* .icon { */
   font-size: 2rem;
 }
 /* form part */
