@@ -35,7 +35,7 @@ body {
 .navigation-list,
 section,
 .submarine,
-.submarine:nth-child(n),
+.submarine :nth-child(n),
 .proj-img,
 .icon-container,
 form ul,
@@ -370,22 +370,26 @@ nav ul li:first-child {
   background-color: darkblue;
   width: 90vw;
   height: 60vh;
-  position: relative;
+  justify-content: space-around;
 }
-.submarine:nth-child(n) {
+.submarine :nth-child(n) {
   border: darkkhaki 2px solid;
-  width: calc(100% / 4);
-  height: 30vh;
+  width: 15vw;
+  height: auto;
+  flex-direction: column;
 }
 .proj-img {
   border: darkturquoise 1px dashed;
   width: 10rem;
   height: 10rem;
-  border-radius: 50%;
   overflow: hidden;
+}
+.proj-img img {
+  border-radius: 3rem;
 }
 .proj-explanation {
   border: pink 2px solid;
+  padding: 0.5rem;
 }
 .proj-explanation p {
   border: violet 2px solid;
@@ -396,8 +400,16 @@ nav ul li:first-child {
   height: 10rem;
 }
 /* youtube app specific settings */
-
+.youtube-app-img {
+  width: auto;
+  height: 10rem;
+}
 /* mobile app specific settings */
+.mobile-app-img {
+  width: auto;
+  height: 10rem;
+}
+
 /* cinese zodiac app specific settings */
 
 /* ---------------------------------------------- */
