@@ -22,7 +22,7 @@
 body {
   background: linear-gradient(#115a54 10%, #002c28);
   /* width: 100vw; */
-  /* height: 400vh; */
+  height: 402vh;
   /* overflow-y: hidden; */
   /* display: flex;
   flex-direction: column; */
@@ -31,15 +31,17 @@ body {
 /* ---------------------------------------------- */
 /* shared properties from all areas */
 /* all centered flexes */
+.header,
 .welcome,
 .navigation-list,
 section,
+.about-me,
 .skills-container,
 .intro-projects,
 .submarine,
 .submarine :nth-child(n),
 .proj-img,
-/* .icon-container, */
+.icon-container,
 form ul,
 form ul li,
 footer {
@@ -60,7 +62,7 @@ section {
 }
 h3 {
   font-size: 3rem;
-  margin: 1rem 0;
+  margin: 1rem 0 2rem 0;
 }
 h3 > p {
   font-size: 2rem;
@@ -88,6 +90,16 @@ header {
   background: radial-gradient(circle, darkmagenta, indigo);
   /* transform-origin: top right; */
   z-index: -3;
+}
+/* sun */
+.sun {
+  width: 10vw;
+  height: 10vw;
+  background-color: darkmagenta;
+  border-radius: 50%;
+  position: relative;
+  align-self: center;
+  border: darkorange 2px solid;
 }
 /* welcome text */
 h1,
@@ -345,9 +357,6 @@ nav ul li:nth-child(2):hover {
   height: 500%;
   transition: 1.7s ease-in-out;
 }
-/* nav ul li:nth-child(2):hover + nav ul li:nth-child(3 + 2) {
-  height: 10%;
-} */
 nav ul li:nth-child(3):hover {
   height: 500%;
   transition: 1.7s ease-in-out;
@@ -358,7 +367,7 @@ nav ul li:last-child:hover {
 }
 nav li > a {
   display: inline-block;
-  border: 1px solid plum;
+  /* border: 1px solid plum; */
   text-decoration: none;
   text-align: end;
   padding: 1rem;
@@ -380,10 +389,27 @@ nav ul li:first-child {
 
 /* ---------------------------------------------- */
 /* about me section */
-
+/* profile area of about me*/
+.about-me {
+  justify-content: space-between;
+}
+.about-me p {
+  width: 70vw;
+  /* align-self: flex-end; */
+  margin-left: 3rem;
+}
+.profile-pic {
+  align-self: flex-start;
+}
+.viviane {
+  width: 12vw;
+  height: auto;
+  /* border: darkolivegreen 2px solid; */
+  box-shadow: darkmagenta 0 0 2rem;
+}
 /* skills */
 .skills-container {
-  width: 90vw;
+  width: 80vw;
   height: 50vh;
   /* border: darkorchid 2px solid; */
   justify-content: space-between;
@@ -508,18 +534,25 @@ nav ul li:first-child {
   left: 15rem;
 }
 .draw {
-  top: 17rem;
-  left: 42rem;
+  top: 16rem;
+  left: 44rem;
 }
 /* ---------------------------------------------- */
 /* my work/projects section */
+/* .my-work {
+  border: darkmagenta 2px solid;
+} */
 /* intro to my work */
 .intro-projects {
   width: 90%;
-  height: 7vh;
+  height: 25vh;
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 2rem;
+  /* border: yellow 2px solid; */
+}
+.in-text-github {
+  font-size: 1.2rem;
 }
 /* submarine part with presented projects */
 .submarine {
@@ -582,19 +615,26 @@ nav ul li:first-child {
   padding: 3rem 0 0 0;
   /* background-color: chartreuse; */
   position: relative;
-  border: rgb(25, 209, 209) 4px solid;
+  /* border: rgb(25, 209, 209) 4px solid; */
   display: flex;
 }
 /* social media and email part */
-/* .icon-container { */
+.icon-container {
   /* flex-direction: row; */
   justify-content: space-evenly;
   width: 30vw;
-  background-color: darkmagenta;
+  height: 6rem;
+  background-color: white;
+  border-radius: 1rem;
   margin: 2rem 0;
+  box-shadow: darkmagenta 0 0 2rem;
 }
-/* .icon { */
-  font-size: 2rem;
+.icon {
+  font-size: 3rem;
+}
+.icon i {
+  color: darkmagenta;
+  font-size: 3rem;
 }
 /* form part */
 form ul {
@@ -661,8 +701,9 @@ button {
   height: 3rem;
   background-color: darkmagenta;
   border: none;
+  border-radius: 1rem;
   cursor: pointer;
-  box-shadow: 0rem 0rem 1rem black;
+  box-shadow: darkmagenta 0 0 2rem;
 }
 /* button style */
 
@@ -673,7 +714,7 @@ footer {
   width: 100%;
   height: 10vh;
   margin-top: 10vh;
-  border: indigo 1px solid;
+  /* border: indigo 1px solid; */
   align-self: flex-end;
   display: flex;
   justify-content: flex-ends;
@@ -681,7 +722,7 @@ footer {
 }
 th {
   width: calc(100vw / 4);
-  border: chartreuse 1px solid;
+  border: darkmagenta 1px solid;
 }
 /* ---------------------------------------------- */
 /* bubbles */
