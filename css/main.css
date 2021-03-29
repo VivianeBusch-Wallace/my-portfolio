@@ -34,6 +34,7 @@ body {
 .welcome,
 .navigation-list,
 section,
+.intro-projects,
 .submarine,
 .submarine :nth-child(n),
 .proj-img,
@@ -55,6 +56,9 @@ section {
   flex-direction: column;
   padding: 3rem;
   position: relative;
+}
+h3 {
+  font-size: 3rem;
 }
 /* ---------------------------------------------- */
 /* welcome page */
@@ -366,34 +370,48 @@ nav ul li:first-child {
 /* about me section */
 /* ---------------------------------------------- */
 /* my work/projects section */
+/* intro to my work */
+.intro-projects {
+  width: 90%;
+  height: 7vh;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+/* submarine part with presented projects */
 .submarine {
-  background-color: darkblue;
+  /* background-color: darkblue; */
   width: 90vw;
-  height: 60vh;
+  height: 50vh;
   justify-content: space-around;
+  /* align-items: flex-start; */
+  padding-top: 3rem;
 }
 .submarine :nth-child(n) {
-  border: darkkhaki 2px solid;
+  /* border: darkkhaki 2px solid; */
   width: 15vw;
-  height: auto;
+  height: 20vh;
   flex-direction: column;
 }
 .proj-img {
-  border: darkturquoise 1px dashed;
-  width: 10rem;
+  /* border: darkturquoise 1px dashed; */
+  /* width: 20rem; */
   height: 10rem;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .proj-img img {
   border-radius: 3rem;
+  margin-bottom: 1rem;
+  box-shadow: 0.3rem 0.3rem 1rem darkgrey;
 }
 .proj-explanation {
-  border: pink 2px solid;
+  /* border: pink 2px solid; */
   padding: 0.5rem;
+  align-self: flex-end;
 }
-.proj-explanation p {
+/* .proj-explanation p {
   border: violet 2px solid;
-}
+} */
 /* cinese zodiac app specific settings */
 .chin-zodiac-img {
   width: auto;
@@ -409,8 +427,7 @@ nav ul li:first-child {
   width: auto;
   height: 10rem;
 }
-
-/* cinese zodiac app specific settings */
+/* hamburger menus specific settings */
 
 /* ---------------------------------------------- */
 /* contact section */
